@@ -29,7 +29,7 @@ app.component('product-display', {
           v-for="(variant, index) in variants" 
           :key="variant.id"
           :style="{ backgroundColor: variant.color }"
-          @mouseover="updateProduct(index)"
+          @click="updateProduct(index)"
           >
         </div> 
 
